@@ -1,0 +1,16 @@
+[
+{
+  "modid": "nottoogreggy",
+  "name": "NTG-Core Mod",
+  "description": "Core Mod for the Not Too Greggy modpack for 1.12.2",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Reclipse", "Gurasic", "Super"],
+  "credits": "To anyone that contributed to this project <3",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
