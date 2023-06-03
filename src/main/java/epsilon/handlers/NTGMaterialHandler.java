@@ -1,15 +1,7 @@
-package nottoogreggy.handlers;
+package epsilon.handlers;
 
 import gregtech.api.unification.material.*;
-import gregtech.api.unification.material.Materials.*;
-import gregtech.api.GTValues;
-import gregtech.api.fluids.fluidType.FluidTypes;
-import gregtech.api.unification.material.Materials;
-import gregtech.api.unification.material.info.MaterialIconSet;
-import gregtech.api.unification.material.properties.BlastProperty;
 
-import static gregtech.api.GTValues.*;
-import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static gregtech.api.unification.material.Materials.*;
 

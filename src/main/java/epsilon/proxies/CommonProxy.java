@@ -1,21 +1,26 @@
-package nottoogreggy.proxies;
+package epsilon.proxies;
+import epsilon.api.util.EPLogger;
+import epsilon.common.item.EPMetaItems;
+import epsilon.common.recipe.EPRecipeAddition;
 import gregtech.api.GregTechAPI;
 import net.minecraft.item.Item;
-import net.minecraftforge.common.MinecraftForge;
+import net.minecraft.item.crafting.IRecipe;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
-import nottoogreggy.NotTooGreggy;
+import epsilon.Epsilon;
 import net.minecraft.world.World;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import nottoogreggy.handlers.NTGMaterialHandler;
+import epsilon.handlers.NTGMaterialHandler;
 
 
 
-@Mod.EventBusSubscriber(modid = NotTooGreggy.MOD_ID)
+@Mod.EventBusSubscriber(modid = Epsilon.MOD_ID)
 public class CommonProxy {
 
     public void preLoad() {
+        EPMetaItems.init();
     }
 
     public void onLoad() {
@@ -44,7 +49,11 @@ public class CommonProxy {
         onServerStopping(event.getWorld());
     }
 
-    public void registerItemRenderer(Item item, int meta, String id) {}
+    @SubscribeEvent(priority = EventPriority.NORMAL)
+    public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
+        EPLogger.logger.info("Registering recipes...");
+        EPRecipeAddition.init();
+    }
 
 }
 
