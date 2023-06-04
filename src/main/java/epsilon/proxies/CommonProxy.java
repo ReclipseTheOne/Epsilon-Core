@@ -3,7 +3,6 @@ import epsilon.api.util.EPLogger;
 import epsilon.common.item.EPMetaItems;
 import epsilon.common.recipe.EPRecipeAddition;
 import gregtech.api.GregTechAPI;
-import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
@@ -12,7 +11,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import epsilon.handlers.NTGMaterialHandler;
+import epsilon.common.materials.EpsilonMaterialHandler;
 
 
 
@@ -20,6 +19,7 @@ import epsilon.handlers.NTGMaterialHandler;
 public class CommonProxy {
 
     public void preLoad() {
+        EPLogger.logger.info("I hate endercore -Reclipse");
         EPMetaItems.init();
     }
 
@@ -37,7 +37,7 @@ public class CommonProxy {
     
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void registerMaterials(GregTechAPI.MaterialEvent event) {
-        NTGMaterialHandler.init();
+        EpsilonMaterialHandler.init();
     }
 
     @SubscribeEvent

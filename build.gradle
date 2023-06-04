@@ -100,6 +100,8 @@ dependencies {
     implementation rfg.deobf("curse.maven:had-enough-items-557549:4451828")
     implementation rfg.deobf("curse.maven:the-one-probe-245211:2667280")
     implementation rfg.deobf("curse.maven:resource-loader-226447:2477566")
+    implementation rfg.deobf("curse.maven:ender-io-64578:3328811")
+    implementation rfg.deobf("curse.maven:endercore-231868:2972849")
 
     compileOnlyApi("curse.maven:groovyscript-687577:4487379")
 }

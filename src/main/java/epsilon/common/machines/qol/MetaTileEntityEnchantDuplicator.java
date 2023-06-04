@@ -70,7 +70,7 @@ public class MetaTileEntityEnchantDuplicator extends SimpleMachineMetaTileEntity
 
         }
 
-        // WE LOVE COPY & PASTING!!!
+        // WE LOVE COPY & PASTING!!! -Message approved by Reclipse and Super
         protected NBTTagCompound getEnchantmentTagFromCircuit() {
             IItemHandlerModifiable importInventory = metaTileEntity.getImportItems();
             for (int i = 0; i < importInventory.getSlots(); i++) {

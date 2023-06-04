@@ -1,2 +1,16 @@
-﻿material.cumshittium=Cumshittium
-material.gadolinium_oxide=Gadolinium (III) Oxide
+﻿
+epsilon.machine.enchant_duplicator.hv.name=Basic Enchant Duplicator
+epsilon.machine.enchant_duplicator.ev.name=Advanced Enchant Duplicator
+epsilon.machine.enchant_duplicator.iv.name=Elite Enchant Duplicator
+epsilon.machine.enchant_duplicator.luv.name=Elite Enchant Duplicator II
+epsilon.machine.enchant_duplicator.zpm.name=Elite Enchant Duplicator III
+epsilon.machine.enchant_duplicator.uv.name=Ultimate Enchant Duplicator
+
+epsilon.machine.enchant_programmer.hv.name=Basic Enchant Programmer
+epsilon.machine.enchant_programmer.ev.name=Advanced Enchant Programmer
+epsilon.machine.enchant_programmer.iv.name=Elite Enchant Programmer
+epsilon.machine.enchant_programmer.luv.name=Elite Enchant Programmer II
+epsilon.machine.enchant_programmer.zpm.name=Elite Enchant Programmer III
+epsilon.machine.enchant_programmer.uv.name=Ultimate Enchant Programmer
+
+metaitem.qol/enchanted_circuit.name=Programmed Enchanting Circuit
